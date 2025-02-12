@@ -108,7 +108,7 @@ local servers = {
   -- html = { filetypes = { 'html', 'twig', 'hbs'} },
   -- gopls = {},
 
-  tsserver = {},
+  ts_ls = {},
 
   eslint = {
     code_actions = {
