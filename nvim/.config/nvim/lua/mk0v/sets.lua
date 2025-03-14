@@ -1,3 +1,5 @@
+-- [[ Setting general ]]
+-- See `:help vim.g`
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 vim.g.netrw_banner = 0
@@ -5,7 +7,6 @@ vim.g.netrw_winsize = 25
 
 -- [[ Setting options ]]
 -- See `:help vim.o`
--- NOTE: You can change these options as you wish!
 
 -- Set highlight on search
 vim.o.hlsearch = false

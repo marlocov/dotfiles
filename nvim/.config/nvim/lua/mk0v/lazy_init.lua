@@ -12,6 +12,20 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
+
+-- [[ Display max line leghth from .editorconfig ]]
+-- See `:help editorconfig`
+local editorconfig_group = vim.api.nvim_create_augroup('EditorConfigColorColumn', { clear = true })
+vim.api.nvim_create_autocmd('BufEnter', {
+  group = editorconfig_group,
+  callback = function()
+    local max_line_length = vim.b.editorconfig and vim.b.editorconfig.max_line_length
+    if max_line_length then
+      vim.opt_local.colorcolumn = tostring(max_line_length)
+    end
+  end,
+})
+
 require('lazy').setup({
   spec = "mk0v.lazy",
   change_detection = { notify = false }
