@@ -122,17 +122,6 @@ local servers = {
   -- html = { filetypes = { 'html', 'twig', 'hbs'} },
   -- gopls = {},
 
-  ts_ls = {},
-
-  eslint = {
-    code_actions = {
-      enable = true,
-      apply_on_save = {
-        enable = true,
-      }
-    }
-  },
-
   lua_ls = {
     Lua = {
       workspace = { checkThirdParty = false },
