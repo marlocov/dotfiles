@@ -1,0 +1,48 @@
+set NERDTree
+
+set number
+set relativenumber
+set showmode
+set scrolloff=12
+set visualbell
+set noerrorbells
+set hlsearch=true
+set incsearch
+
+let mapleader = " "
+nnoremap <C-d> <C-d>zz
+nnoremap <C-u> <C-u>zz
+nnoremap n nzz
+nnoremap N Nzz
+vnoremap J :m '>+1<CR>gv=gv
+vnoremap K :m '<-2<CR>gv=gv
+
+vnoremap <leader>y  "+y
+nnoremap <leader>Y  "+yg_
+nnoremap <leader>y  "+y
+nnoremap <leader>yy  "+yy
+
+nnoremap <leader>p "+p
+nnoremap <leader>P "+P
+vnoremap <leader>p "+p
+vnoremap <leader>P "+P
+
+// Intellij Actions
+nnoremap <leader>sf :action GotoFile<cr>
+nnoremap <leader>sg :action FindInPath<cr>
+nnoremap <leader>ff :action ReformatCode<cr>
+
+nnoremap <leader>e :action ShowErrorDescription<cr>
+nnoremap <leader>dk :action GotoNextError<cr>
+nnoremap <leader>dj :action GotoPreviousError<cr>
+
+// Plugins
+nnoremap <leader>pf :action NERDTree<cr>
+
+// Harpoon
+nnoremap <leader>a :action AddToHarpoon<cr>
+nnoremap <C-e> :action ShowHarpoon<cr>
+nnoremap <C-j> :action GotoHarpoon1<cr>
+nnoremap <C-k> :action GotoHarpoon2<cr>
+nnoremap <C-l> :action GotoHarpoon3<cr>
+nnoremap <C-;> :action GotoHarpoon4<cr>                         
