@@ -55,3 +55,4 @@ vim.o.cursorline = true
 -- Disable Swap files
 vim.o.swapfile = false
 
+vim.o.colorcolumn = "80"

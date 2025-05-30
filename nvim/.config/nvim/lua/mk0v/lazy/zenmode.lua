@@ -13,6 +13,8 @@ return {
             vim.wo.wrap = false
             vim.wo.number = true
             vim.wo.rnu = true
+            vim.opt.colorcolumn = "80"
+
             -- ColorMyPencils()
         end)
 
