@@ -56,3 +56,10 @@ vim.o.cursorline = true
 vim.o.swapfile = false
 
 vim.o.colorcolumn = "80"
+
+-- Use spaces instead of tabs
+vim.o.expandtab = true
+-- Set tabs equal to X spaces
+vim.o.tabstop = 4
+-- Number of spaces to use for each step of (auto)indent
+vim.o.shiftwidth = 5
